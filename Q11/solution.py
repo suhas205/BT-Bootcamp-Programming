@@ -1,0 +1,11 @@
+name = input("Enter employee name: ")
+emp_id = input("Enter employee ID: ")       
+basic_salary = float(input("Enter basic monthly salary: "))
+special_allowances = float(input("Enter special allowances (monthly): "))
+bonus_percentage = float(input("Enter bonus percentage (annual): "))
+gross_monthly_salary = basic_salary + special_allowances
+annual_gross_salary = (gross_monthly_salary * 12) + (gross_monthly_salary * bonus_percentage / 100)
+print("\nEmployee Name:", name)
+print("Employee ID:", emp_id)       
+print("Gross Monthly Salary:", gross_monthly_salary)
+print("Annual Gross Salary:", annual_gross_salary)
