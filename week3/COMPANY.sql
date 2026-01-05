@@ -1,8 +1,3 @@
-/* =========================================================
-   HeartiHealth Database Queries
-   Based strictly on inserted data & given schema
-   ========================================================= */
-
 
 /* 1. Get all the predictions */
 SELECT * FROM cardiodiagnosis;
@@ -363,3 +358,4 @@ JOIN symptom s ON c.cardio_id = s.cardiodiagnosis_cardio_id
 WHERE c.cardioarrestdetected = 1
 AND w.slope = 2
 GROUP BY a.state;
+
